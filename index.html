@@ -78,7 +78,7 @@
                       <a href="#skills">Skills</a>
                     </li>
                     <li class="Menu-4 block py-2 pr-4 md:pl-3 text-center text-gray-700 rounded  md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 md:dark:hover:text-whitemd:dark:hover:bg-transparent text-lg md:hover:underline hover:underline-offset-8 hover:decoration-2" >
-                      <a href="">Projects</a>
+                      <a href="#projects">Projects</a>
                     </li>
                     <li class="Menu-5 block py-2 pr-4 md:pl-3 text-center text-gray-700 rounded  md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 md:dark:hover:text-whitemd:dark:hover:bg-transparent text-lg md:hover:underline hover:underline-offset-8 hover:decoration-2">
                       <a  target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1vMhRYdItR8Ia3zYDk5WlGQuztkJPmIOa/view?usp=sharing_">Resume</a>
@@ -137,11 +137,12 @@
 
         </section>
 
-<section id="about" class=" md:mt-10 md: ">
+<section id="about" class=" md:mt-10  ">
   <div class="flex justify-center   text-gray-900  font-semibold md:font-bold text-2xl md:text-4xl underline decoration-blue-500 md:underline-offset-[10px] underline-offset-[5px] ">
     <span class="subpixel-antialiased">About Me</span>
 </div>
-<div class="Image para mt-5  flex  flex-col lg:flex-row  lg:justify-center lg:space-x-32 space-y-4">
+
+<div class="Image para   flex  flex-col lg:flex-row  lg:justify-center lg:space-x-32 space-y-4 ">
     <div class="image  max-w-sm mx-auto lg:mx-0 ">
 
         <a class="avatar"><img class="  lg:w-96 lg:mt-10  rounded-2xl  shadow-2xl shadow-black hover:scale-110 transition duration-300 ease-in-out" src="/images/About-Me-Final.webp" alt="About Me Image"></a>
@@ -284,7 +285,7 @@
 
 
 
-<div class="Projects">
+<section id="projects" class="Projects ">
 
   
 <div class="heading">
@@ -292,45 +293,46 @@
     <span class="subpixel-antialiased">Projects</span>   
 </div>
 
-<div id="default-carousel" class="relative" data-carousel="static">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-       <!-- Item 1 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
-          <span class="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-          <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    <!-- Implement the carousel -->
+    <div class="relative w-[600px] mx-auto ">
+      <div class="slide relative ">
+          <img class="w-full h-[300px] object-cover"
+              src="/images/Project-1.gif">
+          <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower One Caption</div>
       </div>
-      <!-- Item 2 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-          <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-      <!-- Item 3 -->
-      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-          <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-      </div>
-  </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-  </div>
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          <span class="sr-only">Next</span>
-      </span>
-  </button>
-</div>
 
-</div>
+      <div class="slide relative">
+          <img class="w-full h-[300px] object-cover"
+              src="/images/Project-2.gif">
+          <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Two Caption</div>
+      </div>
+
+      <div class="slide relative">
+          <img class="w-full h-[300px] object-cover"
+              src="/images/Project-3.gif">
+          <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Flower Three Caption
+          </div>
+      </div>
+
+      <!-- The previous button -->
+      <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(-1)">❮</a>
+
+      <!-- The next button -->
+      <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+          onclick="moveSlide(1)">❯</a>
+
+  </div>
+  <br>
+
+  <!-- The dots -->
+  <div class="flex justify-center items-center space-x-5">
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+      <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+  </div>
+
+</section>
 
 
 
